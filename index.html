@@ -12,9 +12,9 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
         <!-- Teks Berjalan -->
-        <marquee behavior="scroll" direction="left" class="text-white mb-2">
+        <marquee behavior="scroll" direction="left" class="marquee">
             Selamat datang di Perangkat Ajar Informatika! Temukan berbagai materi ajar yang menarik dan interaktif.
         </marquee>
     </nav>
@@ -27,101 +27,44 @@
             <img src="assets/image.jpeg" alt="Kartiko Setyoardi" class="rounded-circle">
             <h2 class="mt-2">Kartiko Setyoardi</h2>
         </section>
-        <section class="menu row text-center">
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-                <a href="https://online.fliphtml5.com/zowow/yjiy/" target="_blank" class="text-white">
-                    <div class="card h-100 bg-primary text-white">
-                        <div class="card-body">
-                            <i class="fas fa-calendar-alt fa-2x mb-3"></i>
-                            <h5 class="card-title">Kalender Pendidikan</h5>
-                        </div>
-                    </div>
-                </a>
+        <section class="menu">
+            <div class="card bg-primary">
+                <i class="fas fa-calendar-alt fa-2x mb-3"></i>
+                <h5 class="card-title">Kalender Pendidikan</h5>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-                <div class="card h-100 bg-secondary text-white">
-                    <div class="card-body">
-                        <i class="fas fa-clock fa-2x mb-3"></i>
-                        <h5 class="card-title">Waktu Belajar Efektif</h5>
-                    </div>
-                </div>
+            <div class="card bg-secondary">
+                <i class="fas fa-clock fa-2x mb-3"></i>
+                <h5 class="card-title">Waktu Belajar Efektif</h5>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-                <div class="card h-100 bg-success text-white">
-                    <div class="card-body">
-                        <i class="fas fa-calendar-check fa-2x mb-3"></i>
-                        <h5 class="card-title">Program Tahunan</h5>
-                    </div>
-                </div>
+            <div class="card bg-success">
+                <i class="fas fa-calendar-check fa-2x mb-3"></i>
+                <h5 class="card-title">Program Tahunan</h5>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-                <div class="card h-100 bg-danger text-white">
-                    <div class="card-body">
-                        <i class="fas fa-calendar-day fa-2x mb-3"></i>
-                        <h5 class="card-title">Program Semester</h5>
-                    </div>
-                </div>
+            <div class="card bg-danger">
+                <i class="fas fa-calendar-day fa-2x mb-3"></i>
+                <h5 class="card-title">Program Semester</h5>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-                <div class="card h-100 bg-warning text-white">
-                    <div class="card-body">
-                        <i class="fas fa-bullseye fa-2x mb-3"></i>
-                        <h5 class="card-title">Capaian Pembelajaran</h5>
-                    </div>
-                </div>
+            <div class="card bg-warning">
+                <i class="fas fa-bullseye fa-2x mb-3"></i>
+                <h5 class="card-title">Capaian Pembelajaran</h5>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-                <div class="card h-100 bg-info text-white">
-                    <div class="card-body">
-                        <i class="fas fa-chart-line fa-2x mb-3"></i>
-                        <h5 class="card-title">Alur Tujuan Pembelajaran</h5>
-                    </div>
-                </div>
+            <div class="card bg-info">
+                <i class="fas fa-chart-line fa-2x mb-3"></i>
+                <h5 class="card-title">Alur Tujuan Pembelajaran</h5>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-                <div class="card h-100 bg-light text-dark">
-                    <div class="card-body">
-                        <i class="fas fa-book fa-2x mb-3"></i>
-                        <h5 class="card-title">Modul Ajar</h5>
-                    </div>
-                </div>
+            <div class="card bg-light text-dark">
+                <i class="fas fa-book fa-2x mb-3"></i>
+                <h5 class="card-title">Modul Ajar</h5>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-                <div class="card h-100 bg-dark text-white">
-                    <div class="card-body">
-                        <i class="fas fa-book-open fa-2x mb-3"></i>
-                        <h5 class="card-title">Buku Bahan Ajar</h5>
-                    </div>
-                </div>
+            <div class="card bg-dark">
+                <i class="fas fa-book-open fa-2x mb-3"></i>
+                <h5 class="card-title">Buku Bahan Ajar</h5>
             </div>
         </section>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="kelasModal" tabindex="-1" role="dialog" aria-labelledby="kelasModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="kelasModalLabel">Pilih Kelas</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="list-group">
-                        <a href="link-kelas-10" class="list-group-item list-group-item-action">Kelas 10</a>
-                        <a href="link-kelas-11" class="list-group-item list-group-item-action">Kelas 11</a>
-                        <a href="https://online.fliphtml5.com/zowow/qxck/"
-                            class="list-group-item list-group-item-action" target="_blank">Kelas 12</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Footer -->
-    <footer class="bg-light text-center py-3 mt-4">
+    <footer class="bg-primary text-center py-3 mt-4">
         <p>&copy; 2024 Kartiko Setyoardi. All rights reserved.</p>
     </footer>
 
